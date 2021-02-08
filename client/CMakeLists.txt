@@ -11,7 +11,7 @@ if(APPLE)
   # add_flag_append(CMAKE_Pascal_FLAGS "-k-FmacOS/Frameworks")
   add_flag_append(CMAKE_Pascal_FLAGS "-k\"-framework\" -k\"OpenAL\"")
   add_flag_append(CMAKE_Pascal_FLAGS "-k\"-framework\" -k\"OpenGL\"")
-  # add_flag_append(CMAKE_Pascal_FLAGS "-k\"-rpath\" -k\"@executable_path\"")
+  add_flag_append(CMAKE_Pascal_FLAGS "-k\"-rpath\" -k\"@executable_path\"")
   # add_flag_append(CMAKE_Pascal_FLAGS "-k\"-rpath\"
   # -k\"@executable_path/../Frameworks\"")
   add_flag_append(CMAKE_Pascal_FLAGS "-dOPENGL_FRAMEWORK")
