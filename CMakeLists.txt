@@ -34,11 +34,11 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 # on UNIX, will be ignored elsewhere.
 if(UNIX)
   if(APPLE)
-    set(target_library_install_dir "../Frameworks/")
-    set(CMAKE_INSTALL_PREFIX "Soldat.app/Contents/MacOS/")
-    set(CMAKE_INSTALL_RPATH "@executable_path/../Frameworks")
-    set(CMAKE_BUILD_WITH_INSTALL_NAME_DIR TRUE)
-    set(CMAKE_INSTALL_NAME_DIR "@executable_path/../Frameworks")
+    #set(target_library_install_dir "../Frameworks/")
+    #set(CMAKE_INSTALL_PREFIX "Soldat.app/Contents/MacOS/")
+    #set(CMAKE_INSTALL_RPATH "@executable_path/../Frameworks")
+    #set(CMAKE_BUILD_WITH_INSTALL_NAME_DIR TRUE)
+    #set(CMAKE_INSTALL_NAME_DIR "@executable_path/../Frameworks")
   else()
     set(CMAKE_INSTALL_RPATH
       "$ORIGIN/../${target_library_install_dir}/:$ORIGIN/:${CMAKE_INSTALL_PREFIX}/${target_library_install_dir}/"

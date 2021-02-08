@@ -5,8 +5,6 @@ if(APPLE)
   add_flag_append(CMAKE_Pascal_FLAGS "-Fu./macOS/Frameworks")
   add_flag_append(CMAKE_Pascal_FLAGS "-k-FmacOS/Frameworks")
   add_flag_append(CMAKE_Pascal_FLAGS "-k\"-rpath\" -k\"@executable_path\"")
-  add_flag_append(CMAKE_Pascal_FLAGS
-                  "-k\"-rpath\" -k\"@executable_path/../Frameworks\"")
 endif()
 
 add_flag_prepend(CMAKE_Pascal_FLAGS "-Fu${CMAKE_SOURCE_DIR}/server")
