@@ -4,6 +4,7 @@ find_package(Freetype REQUIRED)
 add_subdirectory(libs/stb)
 
 if(APPLE)
+  add_flag_append(CMAKE_Pascal_FLAGS "-Fl/usr/local/lib")
   # add_flag_append(CMAKE_Pascal_FLAGS "-Fu./macOS/Frameworks")
   # add_flag_append(CMAKE_Pascal_FLAGS "-Fl./macOS/Frameworks")
   # add_flag_append(CMAKE_Pascal_FLAGS "-Fu./macOS/Frameworks")
